@@ -189,10 +189,6 @@ Kaynak klasörü yedek klasörüne tüm içeriğiyle birlikte kopyalar.
 
 Hata durumunda kullanıcıyı bilgilendirir.
 
-
-
-
-
-edekleme sırasında her dosya için işlem bilgisi konsola yazdırılır.
+Yedekleme sırasında her dosya için işlem bilgisi konsola yazdırılır.
 
 Gerekirse logs ve backup_logs klasörlerini otomatik oluşturur.
