@@ -192,3 +192,9 @@ Hata durumunda kullanıcıyı bilgilendirir.
 Yedekleme sırasında her dosya için işlem bilgisi konsola yazdırılır.
 
 Gerekirse logs ve backup_logs klasörlerini otomatik oluşturur.
+
+--------- service_restarter.py -----------
+
+Bu Python scripti, sistemde çalışan belirli servislerin durumunu kontrol eder, eğer servis çalışmıyorsa yeniden başlatmayı dener ve tüm işlemleri log dosyasına kaydeder.
+
+
