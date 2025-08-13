@@ -197,4 +197,29 @@ Gerekirse logs ve backup_logs klasörlerini otomatik oluşturur.
 
 Bu Python scripti, sistemde çalışan belirli servislerin durumunu kontrol eder, eğer servis çalışmıyorsa yeniden başlatmayı dener ve tüm işlemleri log dosyasına kaydeder.
 
+--------- disk_usage.py --------------
+
+Bu Python scripti, sistem disk alanını kontrol eder ve loglar üretir.
+Disk alanı durumuna göre farklı log seviyeleri kullanılır:
+
+DEBUG → Toplam, kullanılan ve boş disk alanı (GB cinsinden)
+
+INFO → Sistem normalse
+
+WARNING → Boş alan 2 GB’tan az
+
+ERROR → Boş alan 1 GB’tan az
+
+CRITICAL → Sistem kritik seviyede dolu (1 GB’tan az)
+
+Özellikler:
+
+Loglar disk_monitor.log dosyasına yazılır
+
+Her çalıştırmada disk durumu güncellenir
+
+Log formatı: tarih-saat - seviye - mesaj
+
+DEBUG seviyesinde detaylı disk bilgisi kaydedilir
+
 
