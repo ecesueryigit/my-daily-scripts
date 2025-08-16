@@ -24,6 +24,24 @@ logs klasöründeki tüm .log dosyalarını tarar.
 
 Dosya adlarının sonuna güncel tarihi YYYY-MM-DD formatında ekler.
 
+--------- disk_checker.py -------------
+
+Bu Python scripti, sistemdeki disk boş alanını kontrol eder ve loglama sistemiyle raporlar.
+
+Özellikler:
+
+Konsolda INFO ve üstü loglar görüntülenir.
+
+disk.log dosyasına yalnızca ERROR ve üstü loglar yazılır.
+
+Boş disk alanı durumuna göre farklı seviyelerde loglama yapılır:
+
+> 5 GB → INFO
+
+2–5 GB → WARNING
+
+< 2 GB → ERROR
+
 Yedekleri backup_logs adlı klasöre kopyalar.
 
 
